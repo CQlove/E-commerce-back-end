@@ -17,7 +17,7 @@ Category.init(
       // Uses auto increment
       autoIncrement: true,
     },
-    Category_name: {
+    category_name: {
       // String
       type: DataTypes.STRING,
       // Doesn't allow null values
