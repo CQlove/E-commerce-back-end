@@ -75,3 +75,8 @@ To use the application, you need to follow the installation part to open the app
 [Link to the code repository](https://github.com/CQlove/E-commerce-back-end)
 
 ## Viedo-Guide
+
+
+
+https://github.com/CQlove/E-commerce-back-end/assets/128104973/66845f53-314a-43b5-9650-42eca9483fd4
+
