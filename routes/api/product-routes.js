@@ -7,7 +7,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 router.get('/', async (req, res) => {
   try {
     // find all products
-    const products = await product.findAll({
+    const products = await Product.findAll({
       // be sure to include its associated Category and Tag data
       include: [{ model: Category }, { model: Tag, }]
     })
@@ -117,10 +117,10 @@ router.delete('/:id', async (req, res) => {
     // delete one product by its `id` value
     const product = await Product.findByPk(req.params.id);
     if (!product) {
-      res.status(404).json({ message: '未找到该产品。' });
+      res.status(404).json({ message: 'no product find!' });
     } else {
       await product.destroy();
-      res.status(200).json({ message: '产品已成功删除。' });
+      res.status(200).json({ message: 'delted product!' });
     }
   } catch (err) {
     res.status(500).json(err);
