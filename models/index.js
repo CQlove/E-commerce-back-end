@@ -22,7 +22,7 @@ Product.belongsTo(Tag, {
 Tag.hasMany(Product, {
   foreignKey: 'product_id',
   onDelete: 'CASCADE',
-})
+});
 
 module.exports = {
   Product,
